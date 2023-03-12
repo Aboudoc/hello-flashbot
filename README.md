@@ -19,10 +19,10 @@ env $(cat .env) npx ts-node src/index.ts
 
 Deployed contract (GOERLI): 0x04b10028affBB22Ae6d98efFFfAb2FEF18e65958
 
-If the simulation returns the following error
+**If the simulation returns the following error**
 
 ```sh
-imulation error: err: max fee per gas less than block base fee
+simulation error: err: max fee per gas less than block base fee
 ```
 
 You need to increase the `maxFeePerGas` in you tx. You submitted it with less than the `baseFee`, so nodes will reject it to mitigate DoS attacks.
